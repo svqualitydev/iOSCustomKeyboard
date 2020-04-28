@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="TCW-fF-nur" customClass="TopButton" customModule="MyKeyboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEE-pu-DZd">
+                    <rect key="frame" x="3" y="3" width="214" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Button" image="speech-bubble">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dEE-pu-DZd" firstAttribute="top" secondItem="TCW-fF-nur" secondAttribute="top" constant="3" id="8Lx-nS-4GD"/>
+                <constraint firstItem="dEE-pu-DZd" firstAttribute="leading" secondItem="haA-1M-Txx" secondAttribute="leading" constant="3" id="X8A-P0-lsF"/>
+                <constraint firstItem="haA-1M-Txx" firstAttribute="trailing" secondItem="dEE-pu-DZd" secondAttribute="trailing" constant="3" id="fUU-oM-0KQ"/>
+                <constraint firstItem="haA-1M-Txx" firstAttribute="bottom" secondItem="dEE-pu-DZd" secondAttribute="bottom" constant="3" id="mLY-me-bLh"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="haA-1M-Txx"/>
+            <connections>
+                <outlet property="button" destination="dEE-pu-DZd" id="naD-AE-sp9"/>
+            </connections>
+            <point key="canvasLocation" x="-2.8985507246376816" y="-179.46428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="speech-bubble" width="32" height="32"/>
+    </resources>
+</document>
